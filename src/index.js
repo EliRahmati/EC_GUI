@@ -6,6 +6,7 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import AccessAlarmIcon from '@mui/icons-material/AccessAlarm';
 import { Alarm } from '@mui/icons-material';
+import myLogo from './Logo.png';
 
 function Pomodoro(props) {
   const [timerId, setTimerId] = useState(null);
