@@ -75,22 +75,22 @@ function Pomodoro(props) {
 }
 
 function sum(arr) {
-    var total = 0;
-    for (var i in arr) {
-        total += arr[i];
-    }
-    return total;
+  var total = 0;
+  for (var i in arr) {
+      total += arr[i];
+  }
+  return total;
 }
 
 async function async_sum(arr) {
-    var total = 0;
-    for (var i in arr) {
-        await new Promise(done => setTimeout(() => done(), 1000));
-        total += arr[i];
-    }
-    return Promise.resolve(total); 
-    
-    // to return sth asynchronously
+  var total = 0;
+  for (var i in arr) {
+      await new Promise(done => setTimeout(() => done(), 1000));
+      total += arr[i];
+  }
+  return Promise.resolve(total); 
+  
+  // to return sth asynchronously
 }
 
 
@@ -102,12 +102,13 @@ var arr = [1, 1/2, 1/4, 1/8, 1/16, 1/32];
 //     console.log(`result of async_sum is ready: ${result}`);
 // });
 (async () => {
-    console.log('Start the code');
-    console.log('async_sum is called.');
-    result = await async_sum(arr)
-    console.log(`result of async_sum is ready: ${result}`);
-    tot = sum(arr)
-    console.log(`result of sum is ready: ${tot}`);
+  console.log('Start the code');
+  console.log('async_sum is called.');
+  result = await async_sum(arr)
+  console.log(`result of async_sum is ready: ${result}`);
+  tot = sum(arr)
+  console.log(`result of sum is ready: ${tot}`);
+  
 })()
 
 
