@@ -109,7 +109,6 @@ var arr = [1, 1/2, 1/4, 1/8, 1/16, 1/32];
   tot = sum(arr)
   console.log(`result of sum is ready: ${tot}`);
   
-  
 })()
 
 
